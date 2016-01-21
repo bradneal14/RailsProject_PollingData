@@ -13,35 +13,35 @@
 
 ActiveRecord::Schema.define(version: 20160121200017) do
 
-  create_table "AnswerChoices", force: :cascade do |t|
+  create_table "answerchoices", force: :cascade do |t|
     t.string   "AnswerChoice_content"
     t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "Polls", force: :cascade do |t|
+  create_table "polls", force: :cascade do |t|
     t.string   "Poll_title"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "Questions", force: :cascade do |t|
+  create_table "questions", force: :cascade do |t|
     t.string   "Question_content"
     t.integer  "poll_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "Responses", force: :cascade do |t|
+  create_table "responses", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "Users", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "user_name"
     t.datetime "created_at"
     t.datetime "updated_at"

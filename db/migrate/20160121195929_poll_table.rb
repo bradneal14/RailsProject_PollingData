@@ -1,6 +1,6 @@
 class PollTable < ActiveRecord::Migration
   def change
-    create_table :Polls do |t|
+    create_table :polls do |t|
       t.string :Poll_title
       t.integer :user_id
 

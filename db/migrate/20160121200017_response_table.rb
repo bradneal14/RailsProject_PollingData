@@ -1,6 +1,6 @@
 class ResponseTable < ActiveRecord::Migration
   def change
-    create_table :Responses do |t|
+    create_table :responses do |t|
       t.integer :user_id
       t.integer :answer_id
 

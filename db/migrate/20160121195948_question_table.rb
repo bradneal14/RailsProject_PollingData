@@ -1,6 +1,6 @@
 class QuestionTable < ActiveRecord::Migration
   def change
-    create_table :Questions do |t|
+    create_table :questions do |t|
       t.string :Question_content
       t.integer :poll_id
 
