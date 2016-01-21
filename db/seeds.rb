@@ -20,75 +20,75 @@ ActiveRecord::Base.transaction do
   )
 
   poll1 = Poll.create!(
-    Poll_title: "Dems",
+    ptitle: "Dems",
     user_id: 3
   )
 
   poll2 = Poll.create!(
-    Poll_title: "Repubs",
+    ptitle: "Repubs",
     user_id: 1
   )
 
   poll3 = Poll.create!(
-    Poll_title: "Ind",
+    ptitle: "Ind",
     user_id: 2
   )
 
   q1 = Question.create!(
-    Question_content: "Hilary?",
+    qcontent: "Hilary?",
     poll_id: 1
   )
 
   q2 = Question.create!(
-    Question_content: "Obama?",
+    qcontent: "Obama?",
     poll_id: 1
   )
 
   q3 = Question.create!(
-    Question_content: "Trump?",
+    qcontent: "Trump?",
     poll_id: 2
   )
 
   q4 = Question.create!(
-    Question_content: "Paul?",
+    qcontent: "Paul?",
     poll_id: 3
   )
 
   q5 = Question.create!(
-    Question_content: "Sanders?",
+    qcontent: "Sanders?",
     poll_id: 1
   )
 
   a1 = AnswerChoice.create!(
-  AnswerChoice_content: "like?",
+  acontent: "like?",
   question_id: 1
   )
   a2 = AnswerChoice.create!(
-  AnswerChoice_content: "dislike?",
+  acontent: "dislike?",
   question_id: 1
   )
   a3 = AnswerChoice.create!(
-  AnswerChoice_content: "indifferent?",
+  acontent: "indifferent?",
   question_id: 1
   )
   a4 = AnswerChoice.create!(
-  AnswerChoice_content: "like?",
+  acontent: "like?",
   question_id: 3
   )
   a5 = AnswerChoice.create!(
-  AnswerChoice_content: "dislike?",
+  acontent: "dislike?",
   question_id: 3
   )
   a6 = AnswerChoice.create!(
-  AnswerChoice_content: "like?",
+  acontent: "like?",
   question_id: 5
   )
   a7 = AnswerChoice.create!(
-  AnswerChoice_content: "dislike?",
+  acontent: "dislike?",
   question_id: 5
   )
   a8 = AnswerChoice.create!(
-  AnswerChoice_content: "like?",
+  acontent: "like?",
   question_id: 4
   )
 
