@@ -5,10 +5,10 @@ class Response <ActiveRecord::Base
     primary_key: :id,
     class_name: 'User'
 
-  belongs_to :answer_chocies,
+  belongs_to :answer_choices,
     foreign_key: :answer_id,
     primary_key: :id,
-    class_name: 'AnswerChoices'
+    class_name: 'AnswerChoice'
 
 
 end
