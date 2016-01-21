@@ -35,83 +35,84 @@ ActiveRecord::Base.transaction do
   )
 
   q1 = Question.create!(
-    Question_content: "Hilary?"
+    Question_content: "Hilary?",
     poll_id: 1
   )
 
   q2 = Question.create!(
-    Question_content: "Obama?"
+    Question_content: "Obama?",
     poll_id: 1
   )
 
   q3 = Question.create!(
-    Question_content: "Trump?"
+    Question_content: "Trump?",
     poll_id: 2
   )
 
   q4 = Question.create!(
-    Question_content: "Paul?"
+    Question_content: "Paul?",
     poll_id: 3
   )
 
   q5 = Question.create!(
-    Question_content: "Sanders?"
+    Question_content: "Sanders?",
     poll_id: 1
   )
 
   a1 = AnswerChoice.create!(
-  AnswerChoice_content: "like?"
+  AnswerChoice_content: "like?",
   question_id: 1
   )
   a2 = AnswerChoice.create!(
-  AnswerChoice_content: "dislike?"
+  AnswerChoice_content: "dislike?",
   question_id: 1
   )
   a3 = AnswerChoice.create!(
-  AnswerChoice_content: "indifferent?"
+  AnswerChoice_content: "indifferent?",
   question_id: 1
   )
   a4 = AnswerChoice.create!(
-  AnswerChoice_content: "like?"
+  AnswerChoice_content: "like?",
   question_id: 3
   )
   a5 = AnswerChoice.create!(
-  AnswerChoice_content: "dislike?"
+  AnswerChoice_content: "dislike?",
   question_id: 3
   )
   a6 = AnswerChoice.create!(
-  AnswerChoice_content: "like?"
+  AnswerChoice_content: "like?",
   question_id: 5
   )
   a7 = AnswerChoice.create!(
-  AnswerChoice_content: "dislike?"
+  AnswerChoice_content: "dislike?",
   question_id: 5
   )
   a8 = AnswerChoice.create!(
-  AnswerChoice_content: "like?"
+  AnswerChoice_content: "like?",
   question_id: 4
   )
 
   r1 = Response.create!(
-  user_id: 2
+  user_id: 2,
   answer_id: 2
   )
   r1 = Response.create!(
-  user_id: 1
+  user_id: 1,
   answer_id: 6
   )
   r1 = Response.create!(
-  user_id: 3
+  user_id: 3,
   answer_id: 4
   )
   r1 = Response.create!(
-  user_id: 1
+  user_id: 1,
   answer_id: 8
   )
   r1 = Response.create!(
-  user_id: 2
+  user_id: 2,
   answer_id: 3
   )
+end
 
 
 # ActiveRecord::Base.transaction do

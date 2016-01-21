@@ -11,24 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160121200017) do
+ActiveRecord::Schema.define(version: 20160121225015) do
 
-  create_table "answerchoices", force: :cascade do |t|
-    t.string   "AnswerChoice_content"
+  create_table "answer_choices", force: :cascade do |t|
+    t.string   "acontent"
     t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "polls", force: :cascade do |t|
-    t.string   "Poll_title"
+    t.string   "ptitle"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "questions", force: :cascade do |t|
-    t.string   "Question_content"
+    t.string   "qcontent"
     t.integer  "poll_id"
     t.datetime "created_at"
     t.datetime "updated_at"
